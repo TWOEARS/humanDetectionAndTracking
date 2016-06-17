@@ -40,7 +40,7 @@ T3: Run the human detection module.
    ::humandetection::connect_port SlaveCamera /stereo/right/image_rect_color
    ::humandetection::connect_port LeftCameraParameters /stereo/left/camera_info
    ::humandetection::connect_port RightCameraParameters /stereo/right/camera_info
-8. ::humandetection::RunDetection {frameRate 7 temporalSlidingWindowSize 11 detectorFrameRatio 2 $
+8. ::humandetection::RunDetection {frameRate 7 temporalSlidingWindowSize 11 detectorFrameRatio 2 maxTrackNumber 100 maxTemplateSize 5 expertThreshold 5 detectionRescalingFactor 1 alphaDistribution 0.5 histogramUpdateRate 0.4 numberOfParticles 25 framesBeforeTrackDeath 15 frameHistory 10 classifiers PATH_TO/classifiers.txt templateMatchingThreshold 0.75 disparityThreshold 10}
 10. ::humandetection::kill
 11. pkill genomixd
 ```
