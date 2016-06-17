@@ -1,0 +1,10 @@
+prefix=/opt/humanDetectionAndTracking
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: calc_mean
+Description: dpf-template library.
+Version: 1.0
+Libs: -L${libdir} -ldpf_template
+Cflags: -I${includedir}

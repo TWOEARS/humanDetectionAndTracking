@@ -1,0 +1,5 @@
+# service abort_activity
+uint32 activity
+---
+bool genom_success
+string genom_exdetail

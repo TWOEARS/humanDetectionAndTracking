@@ -1,0 +1,13 @@
+# pkg-config file for humandetection c client
+#
+prefix=/opt/humanDetectionAndTracking
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib/genom/ros
+includedir=${prefix}/include/genom/ros
+
+Name: humandetection-c-client
+Description: humandetection C client (ros)
+Version: 1.0
+Requires: genom3-c-client = 20140618
+Cflags: -I${includedir}
+Libs: -L${libdir} -lhumandetection-c-client

@@ -1,0 +1,15 @@
+# pkg-config file for humandetection interface and codels library
+#
+prefix=/opt/humanDetectionAndTracking
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+datarootdir=${prefix}/share
+idldir=${datarootdir}/idl
+
+Name: humandetection-genom3
+Description: humandetection interface and codels library
+Version: 1.0
+Requires: genom3 >= 2.99.24, opencv, eigen3, dpf_template
+Cflags: -I${includedir} -I${idldir}
+Libs: -L${libdir} -lhumandetection_codels

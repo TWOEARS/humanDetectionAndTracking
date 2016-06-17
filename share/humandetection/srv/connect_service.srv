@@ -1,0 +1,6 @@
+# service connect_service
+string local
+string remote
+---
+bool genom_success
+string genom_exdetail
